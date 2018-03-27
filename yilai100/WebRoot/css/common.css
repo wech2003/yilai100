@@ -1,5 +1,5 @@
-/**********  锟斤拷锟斤拷页锟芥都要锟斤拷锟矫碉拷锟斤拷式  **********/
-/*锟皆讹拷锟斤拷锟斤拷锟酵拷锟斤拷锟绞�*/
+/**********  所有页面都要共用的样式  **********/
+/*自定义基础通用样式*/
 body{
     background: #f8f8f8;
 }
@@ -16,16 +16,16 @@ a:focus{
     outline: none;
     text-decoration: none;
 }
-/*锟斤拷锟叫帮拷钮锟接斤拷锟戒动锟斤拷*/
+/*所有按钮加渐变动画*/
 .btn{
     -webkit-transition: all 0.225s ease-in-out;
     -moz-transition: all 0.225s ease-in-out;
     -o-transition: all 0.225s ease-in-out;
     transition: all 0.225s ease-in-out;
 }
-/*锟斤拷锟叫帮拷钮锟接斤拷锟戒动锟斤拷*/
+/*所有按钮加渐变动画*/
 
-/*锟斤拷锟介按钮*/
+/*幽灵按钮*/
 .btn-outline-inverse{
     color: #fff;
     background: transparent;
@@ -34,7 +34,7 @@ a:focus{
 .btn-outline-inverse:hover{
     color: #0ba1e4;
     text-shadow: none;
-    background-color: #fff;    
+    background-color: #fff;
 }
 
 .btn-outline-blue{
@@ -45,11 +45,11 @@ a:focus{
 .btn-outline-blue:hover{
     color: #fff;
     text-shadow: none;
-    background-color: #0ba1e4;    
+    background-color: #0ba1e4;
 }
-/*锟斤拷锟介按钮*/
+/*幽灵按钮*/
 
-/*锟斤拷锟斤拷锟铰凤拷锟侥讹拷锟铰伙拷锟斤拷*/
+/*标题下方的短下划线*/
 .line{
     border-top: 1px solid #0ba1e4;
     width: 30px;
@@ -60,9 +60,9 @@ a:focus{
     width:80px;
 }
 
-/*锟斤拷锟斤拷锟铰凤拷锟侥讹拷锟铰伙拷锟斤拷*/
+/*标题下方的短下划线*/
 
-/*锟斤拷写锟斤拷锟斤拷锟斤拷式*/
+/*复写引用样式*/
 blockquote {
     padding-right: 0;
     padding-bottom: 0;
@@ -81,31 +81,31 @@ blockquote .quote-content{
     background-position: bottom right;
     background-repeat: no-repeat;
 }
-/*锟斤拷写锟斤拷锟斤拷锟斤拷式*/
+/*复写引用样式*/
 
-/*锟皆讹拷锟斤拷锟斤拷锟酵拷锟斤拷锟绞� */
+/*自定义基础通用样式 */
 
-/*锟斤拷锟斤拷页锟芥共锟斤拷锟斤拷锟绞斤拷绲硷拷锟�,页锟脚碉拷 */
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
+/*所有页面共享的样式如导航,页脚等 */
+/*手机超小屏幕下的单独样式 xs < 768px */
 @media (max-width: 767px){
-    /*全锟斤拷-锟斤拷锟斤拷*/
+    /*全部-导航*/
     body{
-        padding-top: 0;/*锟狡讹拷锟斤拷锟斤拷锟教讹拷锟斤拷锟斤拷锟斤拷锟斤拷锟侥伙拷锟竭讹拷为52px*/
+        padding-top: 0;/*移动端若固定顶部导航的话高度为52px*/
         padding-bottom: 55px;
     }
-    #header .navbar{/*锟狡讹拷锟剿碉拷锟斤拷锟斤拷锟教讹拷锟斤拷锟斤拷*/
+    #header .navbar{/*移动端导航不固定顶部*/
         position: relative !important;
     }
     #header .navbar{
         padding-bottom: 0;
     }
-    /*全锟斤拷-锟斤拷锟斤拷*/
-    /*全锟斤拷-页锟斤拷*/
+    /*全部-导航*/
+    /*全部-页脚*/
     #footer .footer-wechat p{
         text-align: left !important;
     }
-    /*全锟斤拷-页锟斤拷*/
-    /*全锟斤拷-锟斤拷锟截讹拷锟斤拷*/
+    /*全部-页脚*/
+    /*全部-返回顶部*/
     #clan-slider{
         bottom:55px !important;
     }
@@ -120,16 +120,16 @@ blockquote .quote-content{
     #clan-slider #slider-goTop:hover{
         background-position: 0 0 !important;
     }
-    /*全锟斤拷-锟斤拷锟截讹拷锟斤拷*/
+    /*全部-返回顶部*/
 }
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
+/*手机超小屏幕下的单独样式 xs < 768px */
 
-/*锟斤拷锟斤拷锟街伙拷锟斤拷幕时锟斤拷锟斤拷式 sm >= 768px */
+/*大于手机屏幕时的样式 sm >= 768px */
 @media (min-width: 768px){
     body{
-        padding-top: 82px;/*锟斤拷锟斤拷锟教讹拷锟斤拷锟斤拷锟斤拷锟侥空硷拷*/
+        padding-top: 82px;/*顶部固定导航条的空间*/
     }
-    /*全锟斤拷-锟斤拷锟斤拷*/
+    /*全部-导航*/
     #header .navbar{
         border-radius: 0;
         padding: 15px 0;
@@ -137,13 +137,13 @@ blockquote .quote-content{
     #header .navbar-nav>li>a{
         padding: 15px 0;
     }
-    /*全锟斤拷-锟斤拷锟斤拷*/
+    /*全部-导航*/
 }
-/*锟斤拷锟斤拷锟街伙拷锟斤拷幕时锟斤拷锟斤拷式 sm >= 768px */
+/*大于手机屏幕时的样式 sm >= 768px */
 
-/*平锟斤拷小锟斤拷幕锟斤拷式 768px <= sm < 992px */
+/*平板小屏幕样式 768px <= sm < 992px */
 @media (min-width: 768px) and (max-width: 991px){
-    /*全锟斤拷-页锟斤拷*/
+    /*全部-页脚*/
     #footer .footer-contact h2{
         font-size: 26px !important;
     }
@@ -154,18 +154,18 @@ blockquote .quote-content{
             font-size: 22px !important;
         }
     }
-    /*全锟斤拷-页锟斤拷*/
+    /*全部-页脚*/
 }
-/*平锟斤拷小锟斤拷幕锟斤拷式 768px <= sm < 992px */
+/*平板小屏幕样式 768px <= sm < 992px */
 
-/*锟斤拷锟斤拷992px锟斤拷锟较固讹拷锟斤拷锟轿�970px md >= 992px */
+/*大于992px以上固定宽度为970px md >= 992px */
 @media (min-width: 992px){
-    /*全锟斤拷-锟斤拷锟斤拷锟�*/
+    /*全部-最大宽度*/
     .container {
         width: 970px;
     }
-    /*全锟斤拷-锟斤拷锟斤拷锟�*/
-    /*全锟斤拷-页锟斤拷*/
+    /*全部-最大宽度*/
+    /*全部-页脚*/
     #footer .footer-item-last{
         border-right: 2px solid #c1c1c1;
     }
@@ -178,13 +178,13 @@ blockquote .quote-content{
             padding-left: 10px !important;
         }
     }
-    /*全锟斤拷-页锟斤拷*/
+    /*全部-页脚*/
 }
-/*锟斤拷锟斤拷992px锟斤拷锟较固讹拷锟斤拷锟轿�970px md >= 992px */
+/*大于992px以上固定宽度为970px md >= 992px */
 
 
 
-/*全锟斤拷-锟斤拷锟斤拷锟斤拷锟斤拷式锟斤拷写*/
+/*全部-导航条样式复写*/
 #header .navbar-default{
     border:0;
     margin-bottom: 0;
@@ -212,10 +212,10 @@ blockquote .quote-content{
     width: 18px;
     margin: auto;
 }
-/*全锟斤拷-锟斤拷锟斤拷锟斤拷锟斤拷式锟斤拷写*/
+/*全部-导航条样式复写*/
 
 
-/*全锟斤拷-锟斤拷询banner*/
+/*全部-咨询banner*/
 .contact-banner{
     position: relative;
     overflow:hidden;
@@ -253,9 +253,9 @@ blockquote .quote-content{
     padding-right: 30px;
     margin-top: 20px;
 }
-/*全锟斤拷-锟斤拷询banner*/
+/*全部-咨询banner*/
 
-/*全锟斤拷-页锟斤拷footer*/
+/*全部-页脚footer*/
 #footer{
     padding: 0;
     background-color: #363636;
@@ -315,8 +315,8 @@ blockquote .quote-content{
 #copyright p a:hover{
     text-decoration: none;
 }
-/*全锟斤拷-页锟斤拷footer*/
-/*全锟斤拷-锟狡讹拷锟斤拷页锟斤拷*/
+/*全部-页脚footer*/
+/*全部-移动端页脚*/
 #mob-bottom{
     width: 100%;
     /*max-height: 64px;*/
@@ -344,8 +344,8 @@ blockquote .quote-content{
 #mob-bottom .mob-bottom-item a img{
     max-width: 28px;
 }
-/*全锟斤拷-锟狡讹拷锟斤拷页锟斤拷*/
-/*全锟斤拷-锟截碉拷锟斤拷锟斤拷*/
+/*全部-移动端页脚*/
+/*全部-回到顶部*/
 #clan-slider{
     position: fixed;
     _position: absolute;
@@ -450,14 +450,14 @@ blockquote .quote-content{
     width: 196px;
     height: 196px;
 }
-/*全锟斤拷-锟截碉拷锟斤拷锟斤拷*/
-/**********  锟斤拷锟斤拷页锟芥都要锟斤拷锟矫碉拷锟斤拷式  **********/
+/*全部-回到顶部*/
+/**********  所有页面都要共用的样式  **********/
 
 
 
-/**********  锟斤拷页锟斤拷锟斤拷锟斤拷锟斤拷式  **********/
-/*锟斤拷页锟斤拷式锟斤拷始*/
-/*锟斤拷页-锟叫帮拷锟�*/
+/**********  首页单独的样式  **********/
+/*首页样式开始*/
+/*首页-行板块*/
 .index-row{
     padding: 50px 0;
 }
@@ -465,10 +465,10 @@ blockquote .quote-content{
     text-align: center;
     margin-bottom: 30px;
 }
-/*锟斤拷页-锟叫帮拷锟�*/
+/*首页-行板块*/
 
-/*锟斤拷页-锟斤拷锟角的成硷拷*/
-/*平锟斤拷小锟斤拷幕锟斤拷式 768px <= sm < 992px */
+/*首页-我们的成绩*/
+/*平板小屏幕样式 768px <= sm < 992px */
 @media (min-width: 768px) and (max-width: 991px) {
     .our-data .our-data-item .number-wrapper {
         font-size: 50px !important;
@@ -494,9 +494,9 @@ blockquote .quote-content{
 .our-data .our-data-item .title{
     color:#919191;
 }
-/*锟斤拷页-锟斤拷锟角的成硷拷*/
+/*首页-我们的成绩*/
 
-/*锟斤拷页-锟斤拷锟角碉拷锟斤拷锟斤拷*/
+/*首页-我们的优势*/
 .our-whyus{
     background-color: #e1e1e1;
 }
@@ -531,10 +531,10 @@ blockquote .quote-content{
 .our-whyus-item p{
     line-height: 1.5em;
 }
-/*锟斤拷页-锟斤拷锟角碉拷锟斤拷锟斤拷*/
+/*首页-我们的优势*/
 
-/*锟斤拷页-锟斤拷锟角的凤拷锟斤拷*/
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
+/*首页-我们的服务*/
+/*手机超小屏幕下的单独样式 xs < 768px */
 @media (max-width: 767px) {
     .card-item {
         width: 100% !important;
@@ -624,10 +624,10 @@ blockquote .quote-content{
 .card-area .card-active .card-title h4{
     color: #fff;
 }
-/*锟斤拷页-锟斤拷锟角的凤拷锟斤拷*/
+/*首页-我们的服务*/
 
-/*锟斤拷页-锟酵伙拷锟侥癸拷锟斤拷*/
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
+/*首页-客户的鼓励*/
+/*手机超小屏幕下的单独样式 xs < 768px */
 @media (max-width: 767px) {
     .popover-content {
         margin: 5% 0 0 !important;
@@ -747,9 +747,9 @@ blockquote .quote-content{
     margin-left: auto;
     margin-right: auto;
 }
-/*锟斤拷页-锟酵伙拷锟侥癸拷锟斤拷*/
+/*首页-客户的鼓励*/
 
-/*锟斤拷页-锟斤拷锟斤拷锟斤拷讯*/
+/*首页-最新资讯*/
 .our-news{
     background-color: #ffffff;
 }
@@ -838,9 +838,9 @@ blockquote .quote-content{
 .our-news-more{
     text-align: center;
 }
-/*锟斤拷页-锟斤拷锟斤拷锟斤拷讯*/
+/*首页-最新资讯*/
 
-/*锟斤拷页-锟斤拷锟角的客伙拷*/
+/*首页-我们的客户*/
 .our-client{
     background-color: #e1e1e1;
 }
@@ -883,11 +883,11 @@ blockquote .quote-content{
     filter: grayscale(100%);
     filter: gray;
 }
-/*锟斤拷页-锟斤拷锟角的客伙拷*/
-/**********  锟斤拷页锟斤拷锟斤拷锟斤拷锟斤拷式  **********/
+/*首页-我们的客户*/
+/**********  首页单独的样式  **********/
 
-/********** 锟斤拷锟斤拷9:3锟斤拷页锟斤拷 sidebar锟斤拷式  **********/
-/*9:3锟街革拷锟斤拷*/
+/********** 所有9:3分页的 sidebar样式  **********/
+/*9:3分隔线*/
 #left-line{
     display: block;
     position: absolute;
@@ -905,9 +905,9 @@ blockquote .quote-content{
     height: 100%;
     border-left: 1px solid #c1c1c1;
 }
-/*9:3锟街革拷锟斤拷*/
+/*9:3分隔线*/
 
-/*签证知识锟斤拷锟剿碉拷锟斤拷式*/
+/*签证知识左侧菜单样式*/
 #sidebar{
     overflow: hidden;
 }
@@ -957,7 +957,7 @@ blockquote .quote-content{
     background-color: rgba(194,214,229,.6);
 }
 
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
+/*手机超小屏幕下的单独样式 xs < 768px */
 @media (max-width: 767px){
     #sidebar{
         display: none;
@@ -1011,10 +1011,10 @@ blockquote .quote-content{
         background-color: rgba(194,214,229,0);
     }
 }
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
-/*签证知识锟斤拷锟剿碉拷锟斤拷式*/
+/*手机超小屏幕下的单独样式 xs < 768px */
+/*签证知识左侧菜单样式*/
 
-/*锟揭诧拷sidebar锟斤拷式*/
+/*右侧sidebar样式*/
 #sidebar-content h4:first-child{
     padding-top: 0;
 }
@@ -1069,7 +1069,7 @@ blockquote .quote-content{
     background-position: 0 -64px;
 }
 
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
+/*手机超小屏幕下的单独样式 xs < 768px */
 @media (max-width: 767px){
     #sidebar-content h4{
         border-bottom: 0;
@@ -1083,22 +1083,22 @@ blockquote .quote-content{
         color: #ccc;
     }
 }
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
-/*锟揭诧拷sidebar锟斤拷式*/
-/********** 锟斤拷锟斤拷9:3锟斤拷页锟斤拷 sidebar锟斤拷式  **********/
+/*手机超小屏幕下的单独样式 xs < 768px */
+/*右侧sidebar样式*/
+/********** 所有9:3分页的 sidebar样式  **********/
 
 
-/*锟斤拷锟斤拷锟斤拷页锟斤拷锟斤拷屑锟斤拷锟斤拷宀匡拷锟�*/
+/*所有子页面的中间主体部分*/
 .main-container{
     margin: 0 0 30px 0;
 }
-/*锟斤拷锟斤拷锟斤拷页锟斤拷锟斤拷屑锟斤拷锟斤拷宀匡拷锟�*/
+/*所有子页面的中间主体部分*/
 
 
 
 
 
-/********** 锟斤拷锟斤拷9:3锟斤拷页锟斤拷 锟斤拷锟斤拷锟斤拷锟斤拷article锟斤拷式  **********/
+/********** 所有9:3分页的 文章内容article样式  **********/
 .article-title{
     border-bottom: 1px solid #c1c1c1;
 }
@@ -1181,13 +1181,13 @@ blockquote .quote-content{
 .news-list .our-news-item .media-left {
 
 }
-/********** 锟斤拷锟斤拷9:3锟斤拷页锟斤拷 锟斤拷锟斤拷锟斤拷锟斤拷article锟斤拷式  **********/
+/********** 所有9:3分页的 文章内容article样式  **********/
 
 
-/********** 签证锟斤拷品锟叫憋拷页锟斤拷式  **********/
+/********** 签证产品列表页样式  **********/
 .service-item dd{
     height: 164px;
-    padding-left: 144px;/*锟斤拷锟斤拷图片锟斤拷锟�124px*/
+    padding-left: 144px;/*背景图片宽度124px*/
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
@@ -1256,14 +1256,14 @@ blockquote .quote-content{
     background-repeat: no-repeat;
 }
 
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
+/*手机超小屏幕下的单独样式 xs < 768px */
 @media (max-width: 767px){
     .service-item{
         padding-top: 10px;
     }
     .service-item dd{
         height: 82px;
-        padding-left: 72px;/*锟斤拷锟斤拷图片锟斤拷锟�124px*/
+        padding-left: 72px;/*背景图片宽度124px*/
         position: relative;
         overflow: hidden;
         -moz-background-size: 62px 82px;
@@ -1289,10 +1289,10 @@ blockquote .quote-content{
     }
 
 }
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
-/********** 签证锟斤拷品锟叫憋拷页锟斤拷式  **********/
+/*手机超小屏幕下的单独样式 xs < 768px */
+/********** 签证产品列表页样式  **********/
 
-/********** 签证锟斤拷品锟斤拷细页锟斤拷式  **********/
+/********** 签证产品详细页样式  **********/
 .service-info h1{
     margin: 0;
 }
@@ -1462,10 +1462,10 @@ blockquote .quote-content{
         border-radius: 4px;
     }
 }
-/********** 签证锟斤拷品锟斤拷细页锟斤拷式  **********/
+/********** 签证产品详细页样式  **********/
 
 
-/********** 锟斤拷锟斤拷锟斤拷锟斤拷锟叫憋拷页锟斤拷式  **********/
+/********** 资料下载列表页样式  **********/
 
 .download-item{
     position: relative;
@@ -1541,10 +1541,10 @@ blockquote .quote-content{
     bottom: 20px;
 }
 
-/********** 锟斤拷锟斤拷锟斤拷锟斤拷锟叫憋拷页锟斤拷式  **********/
+/********** 资料下载列表页样式  **********/
 
 
-/********** 锟斤拷锟斤拷锟接硷拷锟斤拷陆页锟斤拷式  **********/
+/********** 美国加急着陆页样式  **********/
 .urgent-row{
     padding: 50px 0;
 }
@@ -1622,7 +1622,7 @@ blockquote .quote-content{
     width: 120px;
 }
 
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
+/*手机超小屏幕下的单独样式 xs < 768px */
 @media (max-width: 767px){
     .urgent-row{
         padding-top: 20px;
@@ -1653,8 +1653,8 @@ blockquote .quote-content{
         line-height: 2em;
     }
 }
-/*锟街伙拷锟斤拷小锟斤拷幕锟铰的碉拷锟斤拷锟斤拷式 xs < 768px */
-/*平锟斤拷小锟斤拷幕锟斤拷式 768px <= sm < 992px */
+/*手机超小屏幕下的单独样式 xs < 768px */
+/*平板小屏幕样式 768px <= sm < 992px */
 @media (min-width: 768px) and (max-width: 991px){
     .urgent-row h2 {
         margin-top: 50px;
@@ -1666,6 +1666,7 @@ blockquote .quote-content{
         font-size: 18px;
     }
 }
-/*平锟斤拷小锟斤拷幕锟斤拷式 768px <= sm < 992px */
+/*平板小屏幕样式 768px <= sm < 992px */
 
-/********** 锟斤拷锟斤拷锟接硷拷锟斤拷陆页锟斤拷式  **********/
+/********** 美国加急着陆页样式  **********/
+
