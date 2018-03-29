@@ -1244,15 +1244,15 @@ blockquote .quote-content{
     color: #fff;
 }
 .service-item .quancheng{
-    background-image: url(../images/quancheng.png);
+    background-image: url(../images/gongshangzhuce.jpg);
     background-repeat: no-repeat;
 }
 .service-item .liucheng{
-    background-image: url(../images/liucheng.png);
+    background-image: url(../images/gongshangzhuce.jpg);
     background-repeat: no-repeat;
 }
 .service-item .zhoubian{
-    background-image: url(../images/zhoubian.png);
+    background-image: url(../images/gongshangzhuce.jpg);
     background-repeat: no-repeat;
 }
 
@@ -1668,5 +1668,80 @@ blockquote .quote-content{
 }
 /*平板小屏幕样式 768px <= sm < 992px */
 
-/********** 美国加急着陆页样式  **********/
+/*获取证书 start*/
+.lence-list{
+    padding: 10px;
+    overflow: hidden;
+}
+.lence-list li{
+    float: left;
+    list-style:none;
+    text-align: center;
+    margin: 0 3px;
+}
+.lence-list li .lence-img{
+    width: 100%;
+    text-align: center;
+}
+.lence-list li em{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: white;
+    font-size: 12px;
+    background: #ff8300;
+    margin-right: 5px;
+}
+.lence-list li .lence-txt{
+    padding: 5px 20px 10px 20px;
+    border-bottom: 2px solid #ff8300;
+    color: #333;
+    text-align: left;
+    font-size: 14px;
+}
+.lence-list li:hover .lence-txt{
+    color: #ff8300;
+}
+.lence-list li:first-child{
+    margin-right:0px;
+}
+.lence-list li:last-child{
+    margin-right: 0;
+}
 
+.dib{display:inline-block;*zoom:1;*display:inline;}
+/*获取证书 end*/
+/*标题 start*/
+.ter-box{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.ter-box.box-bg{
+    background:#f1f2f3;
+}
+.ter-box .ter-tit{
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.ter-tit strong{
+    font-size: 25px;
+    color: #333;
+    line-height: 1;
+}
+.ter-tit p{
+    font-size: 18px;
+    color: #666;
+}
+.ter-tit .sm-dgg{
+    font-size: 16px;
+    color: #666;
+    text-indent: 2rem;
+    margin-top: 15px;
+}
+/*标题 end*/
