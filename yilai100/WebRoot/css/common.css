@@ -1399,6 +1399,11 @@ blockquote .quote-content{
 .doc-list{
     margin-bottom: 20px;
 }
+
+.doc-list>ul>li>a{
+    padding: 10px 10px;
+}
+
 .doc-list .tab-pane{
     background-color: #fff;
     border-left: 1px solid #ddd;
@@ -1414,7 +1419,7 @@ blockquote .quote-content{
     margin-left: 10px;
 }
 .doc-list .table caption .label{
-    font-size: 14px;
+    font-size: 10px;
     font-weight: normal;
     line-height: 1.5em;
 }
@@ -1711,37 +1716,4 @@ blockquote .quote-content{
     margin-right: 0;
 }
 
-.dib{display:inline-block;*zoom:1;*display:inline;}
 /*获取证书 end*/
-/*标题 start*/
-.ter-box{
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    overflow: hidden;
-}
-.ter-box.box-bg{
-    background:#f1f2f3;
-}
-.ter-box .ter-tit{
-    width: 100%;
-    margin-bottom: 25px;
-    text-align: center;
-}
-.ter-tit strong{
-    font-size: 25px;
-    color: #333;
-    line-height: 1;
-}
-.ter-tit p{
-    font-size: 18px;
-    color: #666;
-}
-.ter-tit .sm-dgg{
-    font-size: 16px;
-    color: #666;
-    text-indent: 2rem;
-    margin-top: 15px;
-}
-/*标题 end*/

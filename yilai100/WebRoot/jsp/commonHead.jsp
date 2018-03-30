@@ -19,7 +19,7 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li  class="active"><a href="<%=request.getContextPath()%>/index.jsp">首页</a></li>
-					<li ><a href="<%=request.getContextPath()%>/jsp/gongshang.jsp">工商注册 <span class="sr-only">(current)</span></a><p class="line-top hidden-xs"></p></li>
+					<li ><a href="<%=request.getContextPath()%>/jsp/gongshang.jsp">公司代办<span class="sr-only">(current)</span></a><p class="line-top hidden-xs"></p></li>
 					<li ><a href="<%=request.getContextPath()%>/jsp/shuiwu.jsp">税务代理</a></li>
 					<li ><a href="<%=request.getContextPath()%>/jsp/yanzi.jsp">验资审核</a></li>
 					<li ><a href="<%=request.getContextPath()%>/jsp/other.jsp">其他服务</a></li>

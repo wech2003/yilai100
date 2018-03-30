@@ -101,12 +101,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						</div>
 						<h4>工商知识</h4>
 						<ul>
-							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/gongshangSub/info.jsp?action=1">公司类型</a></li>
-							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/gongshangSub/info.jsp?action=1">注册资本</a></li>
-							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/gongshangSub/info.jsp?action=1">注册地址及区域</a></li>
-							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/gongshangSub/info.jsp?action=1">垫资验资</a></li>
-							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/gongshangSub/info.jsp?action=1">三证合一</a></li>
-							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/gongshangSub/info.jsp?action=1">常用资料</a></li>
+							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/info/info.jsp?action=1">公司类型</a></li>
+							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/info/info.jsp?action=1">注册资本</a></li>
+							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/info/info.jsp?action=1">注册地址及区域</a></li>
+							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/info/info.jsp?action=1">垫资验资</a></li>
+							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/info/info.jsp?action=1">三证合一</a></li>
+							<li><a target="_blank" href="<%=request.getContextPath()%>/jsp/info/info.jsp?action=1">常用资料</a></li>
 						</ul>
 						<h4>常用工具</h4>
 						<ul>

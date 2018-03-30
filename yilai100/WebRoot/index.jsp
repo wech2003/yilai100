@@ -54,7 +54,7 @@
                 <ul class="card-area">
                     <li class="card-item" height="200px">
                         <div class="card-title">
-                            <h4>公司待办</h4>
+                            <h4>公司代办</h4>
                         </div>
                         <div class="card-content">
                             <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="spanGSDB">公司注册、注销、变更、个体注册、一般纳税人认定、各类许可证代办</span></p>

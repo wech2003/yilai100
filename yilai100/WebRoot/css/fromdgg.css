@@ -1,0 +1,150 @@
+/*放弃注销 start*/
+.give-up{
+    padding-bottom: 80px;
+    height: auto;
+    margin: 0px auto;
+}
+.give-up ul{
+    overflow: hidden;
+    padding: 0 20px;
+}
+.give-up ul li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-left: 33.333px;
+}
+.give-up ul li:first-child{
+    margin-left: 0;
+}
+.give-up ul li .img-box{
+    width: 100%;
+    height: 100%;
+}
+.give-up ul li .name{
+    position: absolute;
+    line-height: 60px;
+    color: white;
+    background: url("../images/transparent70.png") repeat;
+    font-size: 18px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+.give-up ul li .name span{
+    font-size: 30px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+.give-up ul li .hide-box{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    color: white;
+    background: url("../images/transparent70.png") repeat;
+    bottom: -100%;
+    left: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+.give-up ul li .hide-box .til{
+    font-size: 18px;
+    padding: 35px 0 25px;
+}
+.give-up ul li .hide-box .sub{
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 0 28px;
+    text-align: left;
+}
+.give-up ul li .hide-box a{
+    position: absolute;
+    width: 157px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 46px;
+    color: #0f91f4;
+    font-size: 18px;
+    border: 1px solid #f4f7ff;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    left: 50%;
+    margin-left: -79px;
+    bottom: 20px;
+    background-color: #f4f7ff;
+}
+.give-up ul li:hover .name{
+    bottom: -100%;
+}
+.give-up ul li:hover .hide-box{
+    bottom: 0;
+}
+.give-up ul li .hide-box a:hover{
+    background-color: #0f91f4;
+    border-color: #0f91f4;
+    color: white;
+}
+/*放弃注销 end*/
+
+/*标题 start*/
+.ter-box{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.ter-box.box-bg{
+    background:#f1f2f3;
+}
+.ter-box .ter-tit{
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.ter-tit strong{
+    font-size: 25px;
+    color: #333;
+    line-height: 1;
+}
+.ter-tit p{
+    font-size: 18px;
+    color: #666;
+}
+.ter-tit .sm-dgg{
+    font-size: 16px;
+    color: #666;
+    text-indent: 2rem;
+    margin-top: 15px;
+}
+/*标题 end*/
+
+.dib{display:inline-block;*zoom:1;*display:inline;}
+
+.big-til{
+    text-align: center;
+    padding: 5px 0 10px;
+    line-height: 1;
+}
+.big-til h3{
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+.big-til p{
+    color: #666;
+    font-size: 19px;
+    margin-top: 10px;
+}
+.big-til span{
+    color: #ff541f;
+}
